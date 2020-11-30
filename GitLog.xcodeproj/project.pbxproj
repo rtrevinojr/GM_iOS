@@ -16,6 +16,7 @@
 		08B65D0E2574774A00774E81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65D0D2574774A00774E81 /* main.m */; };
 		08B65D182574774A00774E81 /* GitLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65D172574774A00774E81 /* GitLogTests.m */; };
 		08B65D232574774A00774E81 /* GitLogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65D222574774A00774E81 /* GitLogUITests.m */; };
+		08B65D3925749B4F00774E81 /* GitHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65D3825749B4F00774E81 /* GitHttpService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		08B65D1E2574774A00774E81 /* GitLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B65D222574774A00774E81 /* GitLogUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitLogUITests.m; sourceTree = "<group>"; };
 		08B65D242574774A00774E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B65D37257499D100774E81 /* GitHttpService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHttpService.h; sourceTree = "<group>"; };
+		08B65D3825749B4F00774E81 /* GitHttpService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHttpService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		08B65CFA2574774800774E81 /* GitLog */ = {
 			isa = PBXGroup;
 			children = (
+				08B65D362574999400774E81 /* Model */,
 				08B65CFB2574774900774E81 /* AppDelegate.h */,
 				08B65CFC2574774900774E81 /* AppDelegate.m */,
 				08B65CFE2574774900774E81 /* SceneDelegate.h */,
@@ -135,6 +139,15 @@
 				08B65D242574774A00774E81 /* Info.plist */,
 			);
 			path = GitLogUITests;
+			sourceTree = "<group>";
+		};
+		08B65D362574999400774E81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08B65D37257499D100774E81 /* GitHttpService.h */,
+				08B65D3825749B4F00774E81 /* GitHttpService.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08B65D032574774900774E81 /* ViewController.m in Sources */,
+				08B65D3925749B4F00774E81 /* GitHttpService.m in Sources */,
 				08B65CFD2574774900774E81 /* AppDelegate.m in Sources */,
 				08B65D0E2574774A00774E81 /* main.m in Sources */,
 				08B65D002574774900774E81 /* SceneDelegate.m in Sources */,
@@ -442,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XMT5WGLVH;
 				INFOPLIST_FILE = GitLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XMT5WGLVH;
 				INFOPLIST_FILE = GitLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
